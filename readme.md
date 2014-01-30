@@ -1,3 +1,4 @@
+# grunt-svg2png [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
 > Generate PNG from SVG using [svg2png](https://github.com/domenic/svg2png)
 
