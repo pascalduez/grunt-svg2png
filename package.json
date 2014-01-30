@@ -20,6 +20,7 @@
     "type": "git",
     "url": "git://github.com/pascalduez/grunt-svg2png.git"
   },
+  "license": "WTFPL",
   "scripts": {
     "test": "grunt"
   },
@@ -39,8 +40,5 @@
   },
   "engines": {
     "node": ">=0.8.0"
-  },
-  "licenses": {
-    "type": "MIT"
   }
 }
