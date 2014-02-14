@@ -19,6 +19,7 @@ grunt.loadNpmTasks('grunt-svg2png');
 
 *Tip: the [load-grunt-tasks](https://github.com/sindresorhus/load-grunt-tasks) module makes it easier to load multiple grunt tasks.*
 
+
 [grunt]: http://gruntjs.com
 [Getting Started]: https://github.com/gruntjs/grunt/wiki/Getting-started
 
@@ -60,6 +61,8 @@ grunt.initConfig({
 grunt.loadNpmTasks("grunt-svg2png");
 grunt.registerTask("default", ["svg2png"]);
 ```
+
+*Tip: the [grunt-newer](https://github.com/tschaub/grunt-newer) module might come in handy if you have a large number of files.*
 
 ## License
 
