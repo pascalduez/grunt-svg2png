@@ -10,8 +10,9 @@ module.exports = function (grunt) {
 
   grunt.registerMultiTask("svg2png", "Convert SVG to PNG", function () {
     var options = this.options();
+    var limit = options.limit || 10;
 
-    async.each(this.files, function (el, next) {
+    async.eachLimit(this.files, limit, function (el, next) {
       var scale = options.scale || 1.0;
       var subdir = options.subdir || "";
       var rootdir = path.dirname(el.src);

@@ -20,6 +20,7 @@ module.exports = function (grunt) {
         options: {
           scale: 2.0,
           subdir: "png_2x",
+          limit: 5
         },
         files: [{
           expand: true,
