@@ -24,6 +24,14 @@ grunt.loadNpmTasks('grunt-svg2png');
 [Getting Started]: https://github.com/gruntjs/grunt/wiki/Getting-started
 
 
+## Motivation
+
+At the time of writing, none of the other grunt plugins offered the scaling capability.
+Bear in mind this is just a grunt wrapper on top of [svg2png](https://github.com/domenic/svg2png).
+It works particulary well combined with [SassyIcons](https://github.com/pascalduez/SassyIcons).
+Since there are already a bunch of other similar modules and to prevent names conflict it is not published on npm.
+
+
 ## Documentation
 
 See the [Gruntfile](Gruntfile.js) in this repo for a full example.
@@ -36,7 +44,7 @@ grunt.initConfig({
   svg2png: {
     fallback: {
       options: {
-        subdir: "tmp"
+        subdir: "png"
       },
       files: [{
         expand: true,
@@ -67,5 +75,3 @@ grunt.registerTask("default", ["svg2png"]);
 ## License
 
 unlicence
-
-
