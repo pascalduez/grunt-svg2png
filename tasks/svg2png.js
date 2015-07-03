@@ -18,7 +18,7 @@ module.exports = function (grunt) {
 
     async.eachLimit(this.files, options.limit, function (el, next) {
       var rootdir = path.dirname(el.src);
-      var pngFile = path.basename(el.src, ".svg") + ".png";
+      var pngFile = typeof el.orig.rename === 'function' ? el.dest : path.basename(el.src, ".svg") + ".png";
       var dest = path.join(rootdir, options.subdir, pngFile);
 
       svg2png(el.src, dest, options.scale, function (err) {
